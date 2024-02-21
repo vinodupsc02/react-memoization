@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Post from './components/post/Post';
 import { Button, Container } from 'react-bootstrap';
+import UseMemo from './components/UseMemo';
 
 
 
@@ -15,7 +16,7 @@ function App() {
         <Button variant='primary' onClick={() => setSignedIn(!signedIn)}>
           Toggle Signed In {signedIn}
         </Button>
-
+        <UseMemo />
     </Container>
   );
 }
