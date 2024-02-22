@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Post from './components/post/Post';
 import { Button, Container } from 'react-bootstrap';
 import UseMemo from './components/UseMemo';
+import ParentComponent from './components/ParentComponent';
 
 
 
@@ -17,6 +18,8 @@ function App() {
           Toggle Signed In {signedIn}
         </Button>
         <UseMemo />
+
+        <ParentComponent />
     </Container>
   );
 }
